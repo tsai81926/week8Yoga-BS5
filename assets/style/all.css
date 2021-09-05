@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/*Helpers*/
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*圖片調整*/
+.bgCoverCenter {
+  background-size: cover;
+  background-position: center center;
+}
+
+/*圓角設定*/
+.radius-16 {
+  border-radius: 1rem;
+}
+
+/*覆蓋層級*/
+.z-indexTop {
+  z-index: 1200;
+  /*在最上層覆蓋全部 (BS5預設最高1080)*/
+}
+
+/*按鈕效果*/
+.btn-hover-opacity:hover {
+  opacity: 50%;
+}
+
+/*寬度設定*/
+.width-68 {
+  width: 68px;
+}
+
+.width-94 {
+  width: 94px;
+}
+
+/*高度設定*/
+.height-68 {
+  height: 68px;
+}
+
+.height-94 {
+  height: 94px;
+}
+
+/*Card*/
+.card-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.titleMenu-logo {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true");
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.index-topBanner {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true");
+  height: 582px;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+.professionalTeam-Banner {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true");
+  height: 628px;
+  border-radius: 16px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  /*首頁 - 活在當下圖片*/
+  .livingNow-img {
+    height: 420px;
+  }
+  /*首頁 - 頂尖師資圖片*/
+  .professionalTeam-Carol {
+    margin-left: -96px;
+  }
+  /*首頁 - 舒適空間圖片*/
+  .relaxingYoga-lookUp {
+    height: 444px;
+  }
+  .relaxingYoga-whiteRoom {
+    height: 207px;
+  }
+  .relaxingYoga-lookDown {
+    height: 207px;
+  }
+  /*首頁 - 課程多元圖片*/
+  .varietyOfCourse-lookUp {
+    height: 445px;
+  }
+  .varietyOfCourse-stretchRight {
+    height: 445px;
+  }
+  .varietyOfCourse-lookDown {
+    height: 445px;
+  }
+  .varietyOfCourse-backExtension {
+    height: 445px;
+  }
+  /*首頁 - 方案選擇圖片*/
+  .coursePlan-backExtension {
+    height: 235px;
+  }
+  .coursePlan-sit {
+    height: 235px;
+  }
+  .coursePlan-backFlip {
+    height: 235px;
+  }
+  /*聯絡我們 - GoogleMap*/
+  .location-mapImg {
+    height: 360px;
+  }
+  /*瑜珈空間 - 圖片*/
+  .yogaSpaceImg-groupClass {
+    height: 350px;
+  }
+  .yogaSpaceImg-singleTraining {
+    height: 350px;
+  }
+  .yogaSpaceImg-showerRoom {
+    height: 350px;
+  }
+  .yogaSpaceImg-equipment {
+    height: 350px;
+  }
+  .yogaSpaceImg-saloon {
+    height: 350px;
+  }
+  .yogaSpace-swiperImg-basic {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-lyengar {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-hatha {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-universal {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-partner {
+    height: 196px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /*首頁 - 活在當下圖片*/
+  .livingNow-img {
+    height: 252px;
+  }
+  /*首頁 - 舒適空間圖片*/
+  .relaxingYoga-lookUp {
+    height: 266px;
+  }
+  .relaxingYoga-whiteRoom {
+    height: 117px;
+  }
+  .relaxingYoga-lookDown {
+    height: 117px;
+  }
+  /*首頁 - 課程多元圖片*/
+  .varietyOfCourse-lookUp {
+    height: 150px;
+  }
+  .varietyOfCourse-stretchRight {
+    height: 150px;
+  }
+  .varietyOfCourse-lookDown {
+    height: 150px;
+  }
+  .varietyOfCourse-backExtension {
+    height: 150px;
+  }
+  /*首頁 - 方案選擇圖片*/
+  .coursePlan-backExtension {
+    height: 238px;
+  }
+  .coursePlan-sit {
+    height: 238px;
+  }
+  .coursePlan-backFlip {
+    height: 238px;
+  }
+  /*聯絡我們 - GoogleMap*/
+  .location-mapImg {
+    height: 323px;
+  }
+  /*瑜珈空間 - 圖片*/
+  .yogaSpaceImg-groupClass {
+    height: 216px;
+  }
+  .yogaSpaceImg-singleTraining {
+    height: 210px;
+  }
+  .yogaSpaceImg-showerRoom {
+    height: 210px;
+  }
+  .yogaSpaceImg-equipment {
+    height: 210px;
+  }
+  .yogaSpaceImg-saloon {
+    height: 210px;
+  }
+  .yogaSpace-swiperImg-basic {
+    height: 161px;
+  }
+  .yogaSpace-swiperImg-lyengar {
+    height: 161px;
+  }
+  .yogaSpace-swiperImg-hatha {
+    height: 161px;
+  }
+  .yogaSpace-swiperImg-universal {
+    height: 161px;
+  }
+  .yogaSpace-swiperImg-partner {
+    height: 161px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*首頁 - 活在當下圖片*/
+  .livingNow-img {
+    height: 420px;
+  }
+  /*首頁 - 頂尖師資圖片*/
+  .teacherImg-Carol {
+    width: 48px;
+    height: 48px;
+  }
+  .teacherImg-Kanae {
+    width: 48px;
+    height: 48px;
+  }
+  .teacherImg-Asa {
+    width: 48px;
+    height: 48px;
+  }
+  /*首頁 - 舒適空間圖片*/
+  .relaxingYoga-lookUp {
+    height: 210px;
+  }
+  .relaxingYoga-whiteRoom {
+    height: 210px;
+  }
+  /*首頁 - 課程多元圖片*/
+  .varietyOfCourse-lookUp {
+    height: 165px;
+  }
+  .varietyOfCourse-stretchRight {
+    height: 165px;
+  }
+  .varietyOfCourse-lookDown {
+    height: 165px;
+  }
+  .varietyOfCourse-backExtension {
+    height: 165px;
+  }
+  /*首頁 - 方案選擇圖片*/
+  .coursePlan-backExtension {
+    height: 235px;
+  }
+  .coursePlan-sit {
+    height: 235px;
+  }
+  .coursePlan-backFlip {
+    height: 235px;
+  }
+  /*聯絡我們 - GoogleMap*/
+  .location-mapImg {
+    height: 195px;
+  }
+  /*瑜珈空間 - 圖片*/
+  .yogaSpaceImg-groupClass {
+    height: 350px;
+  }
+  .yogaSpaceImg-singleTraining {
+    height: 350px;
+  }
+  .yogaSpaceImg-showerRoom {
+    height: 350px;
+  }
+  .yogaSpaceImg-equipment {
+    height: 350px;
+  }
+  .yogaSpaceImg-saloon {
+    height: 350px;
+  }
+  .yogaSpace-swiperImg-basic {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-lyengar {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-hatha {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-universal {
+    height: 196px;
+  }
+  .yogaSpace-swiperImg-partner {
+    height: 196px;
+  }
+}
+
+/*Pages*/
+
+/*# sourceMappingURL=all.css.map */
