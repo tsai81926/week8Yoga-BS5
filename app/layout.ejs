@@ -8,55 +8,218 @@
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <body class="position-relative">
+    <nav class="titleMenu navbar navbar-expand-lg navbar-light bg-primary py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="titleMenu-logo h4 bgCoverCenter mb-0">DOYOGA</h1>
+        </a>
+        <button class="titleMenu-collapseBtn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <div class="titleMenu-collapse collapse navbar-collapse" id="navbarMenu">
+          <ul class="titleMenu-info navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">課程介紹</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="yoga-space.html">瑜珈空間</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item px-4">
+              <a class="nav-link " href="month-schedule.html">當月課表</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <ul class="titleMenu-contactUs list-unstyled d-flex mb-0">
+            <li class="me-4 mx-lg-2">
+              <a class="btn btn-outline-secondary radius-16" href="contact.html" role="button">立即預約</a>
+            </li>
+            <li class="mx-lg-2">
+              <a class="btn btn-outline-secondary radius-16" href="contact.html" role="button">聯絡我們</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
+    <!--右列社群LOGO-->
+    <div class="side-socialList d-none d-lg-block position-absolute position-fixed top-30 end-0 z-indexTop">
+      <ul class="list-unstyled me-4">
+        <li class="display-5">
+          <a class="link-secondary" href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="display-5">
+          <a class="link-secondary" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="display-5">
+          <a class="link-secondary" href="#">
+            <i class="fab fa-line"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <%- contents %>
 
-    <footer class="footer">
-      footer
+    <footer class="subscribeUs bg-secondary">
+      <div class="subscribeUs-inputGroup border-bottom">
+        <div class="container">
+          <div class="row justify-content-between py-6 py-md-8">
+            <div class="col-lg-8 text-white">
+              <h3>現在訂閱，獲得課程優惠碼！</h3>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="subscribeBtn">
+                <button class="btn btn-secondary-light text-white" type="button" id="subscribeBtn">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="subscribeUs-footerMenu pb-8">
+          <div class="subscribeUs-footerMenu-title d-flex justify-content-between align-items-center mt-6 mt-md-8 mb-2">
+            <a class="subscribeUs-footerMenu-titleLogo" href="index.html">
+              <img class="w-50" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA.png?raw=true" alt="Logo-white">
+            </a>
+            <ul class="subscribeUs-footerMenu-titleSocial list-unstyled d-flex align-items-center my-auto">
+              <li class="h4 mx-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li class="h4 mx-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="h4 mx-1"><a href="#"><i class="fab fa-line"></i></a></li>
+            </ul>
+          </div>
+          <ul class="subscribeUs-footerMenu-titleInfo list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#">課程介紹</a>
+            </li>
+            <li class="mb-2">
+              <a href="yoga-space.html">瑜珈空間</a>
+            </li>
+            <li class="d-md-flex justify-content-md-between">
+              <a class="mb-md-0" href="month-schedule.html">當月課表</a>
+              <p class="text-white mb-0 mt-2 mt-md-0">© 2021. All Rights Reserved.</p>
+              <p class="d-md-block mb-0"></p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+       /*課程多元 - Swiper*/
+      var courseSwiper = new Swiper(".courseSwiper", {
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          1: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
+              fill: 'row'               
+            },
+            centeredSlides: false,
+            spaceBetween: 15,
+          },
+          992: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            centeredSlides: false,
+          },
+        }
+      });
+    /*聽聽他們怎麼說 - Swiper*/
+      var recommendsSwiper = new Swiper (".recommendsSwiper", {
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          1: {
+            slidesPerView: 1,
+            grid: {
+              rows: 3,
+              fill: 'row'               
+            },
+            navigation: {
+              nextEl: ".fa-arrow-left",
+              prevEl: ".fa-arrow-right",
+            },
+            centeredSlides: false,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
+              fill: 'row'               
+            },
+            centeredSlides: false,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 3,
+            grid: {
+              rows: 2,
+              fill: 'row'               
+            },
+            spaceBetween: 30,
+            centeredSlides: false,
+          },
+        }
+      });
+    /*瑜珈空間 - Swiper*/
+    var yogaSpaceSwiper = new Swiper(".yogaSpaceSwiper", {
+      autoplay: {
+        delay: 5000,
+      },
+      breakpoints: {
+        1: {
+          slidesPerView: 1.5,
+          grid: {
+            rows: 1,
+            fill: 'row'               
+          },
+          centeredSlides: false,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 3,
+          grid: {
+            rows: 1,
+            fill: 'row'               
+          },
+          centeredSlides: false,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 4,
+          grid: {
+            rows: 1,
+            fill: 'row'               
+          },
+          spaceBetween: 30,
+          centeredSlides: false,
+        },
+      }
+    });
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    
   </body>
 
 </html>
