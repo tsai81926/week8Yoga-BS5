@@ -5,6 +5,9 @@
 }
 
 /*圓角設定*/
+.radius-4 {
+    border-radius: .25rem;
+}
 .radius-16 {
     border-radius: 1rem;
 }
@@ -14,12 +17,36 @@
     z-index: 1200;   /*在最上層覆蓋全部 (BS5預設最高1080)*/
 }
 
+/*絕對位置(position-absolute)*/
+.absolute-topMinus-10 {
+    position: absolute;
+    top: -10%;
+}
+
 /*按鈕效果*/
 .btn-hover-opacity {
     &:hover {
     opacity: 50%;
     }
 }
+.hover-borderwhite {
+    &:hover {
+        border-color: white;
+    }
+}
+.hover-textWhite {
+    &:hover {
+        color: white;
+    }
+}
+
+.hover-transBig {
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.6s;
+    }
+}
+
 
 /*寬度設定*/
 .width-68 {
