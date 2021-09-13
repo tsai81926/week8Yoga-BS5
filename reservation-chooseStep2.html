@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DoYoga Contact</title>
+    <title>DoYoga Reservation-ChooseStep2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,58 +73,174 @@
     </div>
 
     
-<section class="contactUs pt-12 pt-md-15 pb-18 pb-md-17 pb-lg-18">
+<section class="reservation-choose mt-12 mt-md-15">
     <div class="container">
-        <h2 class="h3 text-center fw-bold text-secondary mb-6 mb-md-8">聯絡我們</h2>
-        <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-0">
-                <div class="location-map mb-6">
-                    <iframe class="location-mapImg w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29462.407590531737!2d120.30028134684537!3d22.623907113427148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049783205c61%3A0xebaf934b04f62525!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A!5e0!3m2!1szh-TW!2stw!4v1630745017912!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="location-text text-secondary">
-                    <h3 class="h4 mb-2">DOYOGA 教室位置</h3>
-                    <p class="mb-2">高雄市苓雅區北信街 23 號 2 樓</p>
-                    <ul class="location-text-transport list-unstyled">
-                        <h4 class="h6">如何前往：</h4>
-                        <li class="mb-6">
-                            <p>1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</p>
-                        </li>
-                        <li class="mb-6">
-                            <p>2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</p>
-                        </li>
-                        <li class="mb-6">
-                            <p>3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</p>
-                        </li>
-                    </ul>
-                </div>
+        <h2 class="h3 text-secondary text-center fw-bold mb-6 mb-md-4">立即預約</h2>
+        <div class="row mb-8">
+            <div class="col-4 col-md-2 offset-md-3">
+                <p class="border-0 radius-16 bg-secondary text-center text-white py-3">
+                    選擇方案
+                </p>
             </div>
-            <div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0">
-                <div class="advice bg-primary text-secondary px-8 pt-8 pb-6 pb-md-8">
-                    <h3 class="h5 mb-4 mb-md-6">意見回饋&問題詢問</h3>
-                    <div class="mb-4">
-                        <label for="contactUs-advice-name" class="form-label">姓名</label>
-                        <input type="text" class="form-control" id="contactUs-advice-name" placeholder="請輸入您的姓名">
+            <div class="col-4 col-md-2">
+                <p class="border-0 radius-16 bg-primary text-center text-secondary py-3">
+                    填寫資料
+                </p>
+            </div>
+            <div class="col-4 col-md-2">
+                <p class="border-0 radius-16 bg-primary text-center text-secondary py-3">
+                    完成預約
+                </p>
+            </div>
+        </div>
+        <!--選擇方案 - 首次、短期、長期卡片-->
+        <div class="row">      
+            <div class="col-12 col-lg-4" style="transform: rotate(0);">
+              <div class="reservation-choose-firstTime card mb-8 mb-md-6">
+                <div class="row flex-md-row flex-lg-column">
+                  <a class="col-12 col-md-7 col-lg-12 stretched-link" href="#">
+                    <img class="reservation-choose-backExtension w-100 radius-16"src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg?raw=true" alt="women-backExtension">
+                  </a>
+                  <div class="col-12 col-md-5 col-lg-12">
+                    <div class="card-body d-grid col-12 py-6">
+                      <h4 class="card-title text-secondary text-center mb-1">首次體驗</h4>
+                      <p class="h5 text-secondary-light text-center mb-2">NT 1450 / 次</p>
+                      <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。初次至DOYOGA 上課建議選擇此方案。</p>
+                      <button type="button" class="btn btn-secondary-light text-white py-2">
+                        選擇課程
+                      </button>
                     </div>
-                    <div class="mb-4">
-                        <label for="contactUs-advice-email" class="form-label">電子信箱</label>
-                        <input type="email" class="form-control" id="contactUs-advice-email" placeholder="email@example.com">
-                    </div>
-                    <div class="mb-4">
-                        <label for="contactUs-advice-phone" class="form-label">手機號碼</label>
-                        <input type="tel" class="form-control" id="contactUs-advice-phone" placeholder="0912-345-678">
-                    </div>
-                    <div class="mb-6">
-                        <label for="contactUs-advice-textArea" class="form-label">意見回饋</label>
-                        <textarea class="form-control" id="contactUs-advice-textArea" rows="9"></textarea>
-                    </div>
-                    <div class="contactUs-advice-button d-flex justify-content-end">
-                        <button class="btn btn-secondary text-white" type="submit">送出</button>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="text-center">
+                <span class="material-icons fs-1 text-secondary">
+                  arrow_drop_down
+                </span>
+              </div>
+            </div>    
+            <div class="col-12 col-lg-4 d-none d-lg-block" style="transform: rotate(0);">
+              <div class="reservation-choose-shortTerm card mb-8 mb-md-6">
+                <div class="row flex-md-row flex-lg-column">
+                  <a href="#" class="col-12 col-md-7 col-lg-12 stretched-link">
+                    <img class="reservation-choose-sit w-100 radius-16"src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20performing%20yoga.jpg?raw=true"  alt="women-sit">
+                  </a>
+                  <div class="col-12 col-md-5 col-lg-12">
+                    <div class="card-body d-grid col-12 py-6">
+                      <h4 class="card-title text-secondary text-center mb-1">短期體驗</h4>
+                      <p class="h5 text-secondary-light text-center mb-2">NT $1800 / 月</p>
+                      <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                      <button type="button" class="btn btn-secondary-light text-white py-2">選擇課程</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="col-12 col-lg-4 d-none d-lg-block" style="transform: rotate(0);">
+              <div class="reservation-choose-longTerm card">
+                <div class="row flex-md-row flex-lg-column">
+                  <a href="#" class="col-12 col-md-7 col-lg-12 stretched-link">
+                    <img class="reservation-choose-backFlip radius-16"src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg?raw=true" alt="women-backFlip">
+                  </a>
+                  <div class="col-12 col-md-5 col-lg-12">
+                    <div class="card-body d-grid col-12 py-6">
+                      <h4 class="card-title text-secondary text-center mb-1">長期體驗</h4>
+                      <p class="h5 text-secondary-light text-center mb-2">NT $5600 / 季</p>
+                      <p class="text-secondary mb-10 mb-md-6 mb-lg-10">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                      <button type="button" class="btn btn-secondary-light text-white py-2">選擇課程</button>
+                    </div>
+                  </div>  
+                </div>
+              </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="reservation-chooseClass bg-secondary pb-12 pb-lg-15">
+  <h3 class="text-center text-white pt-8 pt-lg-10 pb-6 pb-8">選擇課程階級</h3>
+  <div class="reservationSwiper swiper container"> 
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card bg-secondary-light text-white border-4 border-white">
+          <div class="card-title d-flex justify-content-between px-6 mb-0 pt-6">
+            <h4>基礎 Basic</h4><i class="far fa-check-circle h4"></i>
+          </div>
+          <div class="card-body pt-0">
+            <div class="card-text mb-5">
+              <p>基礎課程<span class="border border-secondary bg-secondary radius-16 text-white px-4 py-1 ms-2">60 min</span></p>
+            </div>
+            <ul class="list-unstyled">
+              <li>・入體位法動作解說</li>
+              <li>・瑜珈基礎動作、順位</li>
+              <li>・適合任何階段練習者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card bg-secondary-light text-white border-4 hover-borderwhite">
+          <div class="card-title d-flex justify-content-between px-6 mb-0 pt-6">
+            <h4>中階 Intermediate</h4><i class="far fa-check-circle h4 opacity-50"></i>
+          </div>
+          <div class="card-body pt-0">
+            <div class="card-text mb-5">
+              <p>艾揚格、哈達、寰宇<span class="border border-secondary bg-secondary radius-16 text-white px-4 py-1 ms-2">60 min</span></p>
+            </div>
+            <ul class="list-unstyled">
+              <li>・刺激身體七個層次為核心</li>
+              <li>・結合流暢體位法練習、呼吸、觀想</li>
+              <li>・適合半年以上練習者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card bg-secondary-light text-white border-4 hover-borderwhite">
+          <div class="card-title d-flex justify-content-between px-6 mb-0 pt-6">
+            <h4>高階 Advanced</h4><i class="far fa-check-circle h4 opacity-50"></i>
+          </div>
+          <div class="card-body pt-0">
+            <div class="card-text mb-5">
+              <p>阿斯坦加、陰陽<span class="border border-secondary bg-secondary radius-16 text-white px-4 py-1 ms-2">60 min</span></p>
+            </div>
+            <ul class="list-unstyled">
+              <li>・充分打開身體每個部位</li>
+              <li>・顯著提升力量與柔軟度</li>
+              <li>・適合一年以上練習者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reservation-choose-notice text-secondary mt-8 mt-lg-10 mb-18 mb-md-17 mb-lg-20">
+<div class="container">
+    <p class="text-secondary text-center mb-1">您選擇的是</p>
+    <p class="h5 text-secondary text-center">首次體驗課程-基礎</p>
+    <div class="border-secondary border-2 border-bottom w-25 mx-auto mb-10"></div>
+    <h3 class="text-center mb-4">預約須知</h3>
+    <div class="row mb-8">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 g-lg-0">
+            <ul class="reservation-choose-noticeList list-unstyled">
+                <li class="">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+                <li class="">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+                <li class="">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+                <li class="">4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mx-auto">
+        <div class="d-grid col-10 col-md-3 offset-md-4 mx-auto">
+            <a class="btn btn-secondary-light text-white py-2" role="button" href="reservation-info.html">繼續預約</a>
+        </div>
+    </div>        
+</div>
+</section>
+
+
 
     <footer class="subscribeUs bg-secondary">
       <div class="subscribeUs-inputGroup border-bottom">

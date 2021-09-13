@@ -15,6 +15,10 @@ img {
 }
 
 /*圓角設定*/
+.radius-4 {
+  border-radius: .25rem;
+}
+
 .radius-16 {
   border-radius: 1rem;
 }
@@ -25,9 +29,34 @@ img {
   /*在最上層覆蓋全部 (BS5預設最高1080)*/
 }
 
+/*絕對位置(position-absolute)*/
+.absolute-topMinus-10 {
+  position: absolute;
+  top: -10%;
+}
+
 /*按鈕效果*/
 .btn-hover-opacity:hover {
   opacity: 50%;
+}
+
+.hover-borderwhite:hover {
+  border-color: white;
+}
+
+.hover-textWhite:hover {
+  color: white;
+}
+
+.hover-transBig:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
 }
 
 /*寬度設定*/
@@ -53,6 +82,16 @@ img {
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 4px;
+}
+
+/*DatePicker*/
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.datepicker-picker {
+  color: #907A7B;
 }
 
 .titleMenu-logo {
@@ -155,6 +194,62 @@ img {
   .yogaSpace-swiperImg-partner {
     height: 196px;
   }
+  /*課程介紹 - 圖片*/
+  .introduce-month-limitedCourse {
+    height: 341px;
+  }
+  .introduce-courses-basic {
+    height: 196px;
+  }
+  .introduce-courses-iyengar {
+    height: 196px;
+  }
+  .introduce-courses-hatha {
+    height: 196px;
+  }
+  .introduce-courses-universal {
+    height: 196px;
+  }
+  .introduce-courses-arcoYoga {
+    height: 196px;
+  }
+  .introduce-courses-ashtanga {
+    height: 196px;
+  }
+  .introduce-courses-yinYang {
+    height: 196px;
+  }
+  .introduce-courses-aromaYoga {
+    height: 196px;
+  }
+  .introduce-teachers-card {
+    height: 418px;
+  }
+  .introduce-teachers-Carol {
+    height: 96px;
+  }
+  .introduce-teachers-Kanae {
+    height: 96px;
+  }
+  .introduce-teachers-Kuzuha {
+    height: 96px;
+  }
+  .introduce-teachers-Asa {
+    height: 96px;
+  }
+  .introduce-coursesModal-basic {
+    height: 418px;
+  }
+  /*立即預約 - 圖片*/
+  .reservation-choose-backExtension {
+    height: 235px;
+  }
+  .reservation-choose-sit {
+    height: 235px;
+  }
+  .reservation-choose-backFlip {
+    height: 235px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -229,6 +324,62 @@ img {
   }
   .yogaSpace-swiperImg-partner {
     height: 161px;
+  }
+  /*課程介紹 - 圖片*/
+  .introduce-month-limitedCourse {
+    height: 341px;
+  }
+  .introduce-courses-basic {
+    height: 196px;
+  }
+  .introduce-courses-iyengar {
+    height: 196px;
+  }
+  .introduce-courses-hatha {
+    height: 196px;
+  }
+  .introduce-courses-universal {
+    height: 196px;
+  }
+  .introduce-courses-arcoYoga {
+    height: 196px;
+  }
+  .introduce-courses-ashtanga {
+    height: 196px;
+  }
+  .introduce-courses-yinYang {
+    height: 196px;
+  }
+  .introduce-courses-aromaYoga {
+    height: 196px;
+  }
+  .introduce-teachers-card {
+    height: 418px;
+  }
+  .introduce-teachers-Carol {
+    height: 96px;
+  }
+  .introduce-teachers-Kanae {
+    height: 96px;
+  }
+  .introduce-teachers-Kuzuha {
+    height: 96px;
+  }
+  .introduce-teachers-Asa {
+    height: 96px;
+  }
+  .introduce-coursesModal-basic {
+    height: 418px;
+  }
+  /*立即預約 - 圖片*/
+  .reservation-choose-backExtension {
+    height: 235px;
+  }
+  .reservation-choose-sit {
+    height: 235px;
+  }
+  .reservation-choose-backFlip {
+    height: 235px;
   }
 }
 
@@ -314,6 +465,62 @@ img {
   }
   .yogaSpace-swiperImg-partner {
     height: 196px;
+  }
+  /*課程介紹 - 圖片*/
+  .introduce-month-limitedCourse {
+    height: 218px;
+  }
+  .introduce-courses-basic {
+    height: 196px;
+  }
+  .introduce-courses-iyengar {
+    height: 196px;
+  }
+  .introduce-courses-hatha {
+    height: 196px;
+  }
+  .introduce-courses-universal {
+    height: 196px;
+  }
+  .introduce-courses-arcoYoga {
+    height: 196px;
+  }
+  .introduce-courses-ashtanga {
+    height: 196px;
+  }
+  .introduce-courses-yinYang {
+    height: 196px;
+  }
+  .introduce-courses-aromaYoga {
+    height: 196px;
+  }
+  .introduce-teachers-card {
+    height: 418px;
+  }
+  .introduce-teachers-Carol {
+    height: 96px;
+  }
+  .introduce-teachers-Kanae {
+    height: 96px;
+  }
+  .introduce-teachers-Kuzuha {
+    height: 96px;
+  }
+  .introduce-teachers-Asa {
+    height: 96px;
+  }
+  .introduce-coursesModal-basic {
+    height: 165px;
+  }
+  /*立即預約 - 圖片*/
+  .reservation-choose-backExtension {
+    height: 235px;
+  }
+  .reservation-choose-sit {
+    height: 235px;
+  }
+  .reservation-choose-backFlip {
+    height: 235px;
   }
 }
 
