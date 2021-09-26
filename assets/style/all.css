@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*Helpers*/
+body {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
